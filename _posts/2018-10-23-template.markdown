@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Template for Blog"
 date:   2018-10-23 17:23:20 +0800
 categories: jekyll update
 ---
 
-Description
+Description:
 
 Implementation:
-{% highlight ruby %}
+{% highlight python %}
 
 {% endhighlight %}
 

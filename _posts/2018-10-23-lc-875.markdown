@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "LeetCode 875"
 date:   2018-10-23 17:24:20 +0800
 categories: jekyll update
 ---
@@ -8,7 +8,7 @@ categories: jekyll update
 Description
 
 Implementation:
-{% highlight ruby %}
+{% highlight python %}
 class Solution:
     def minEatingSpeed(self, piles, H):
         left, right = 1, max(piles)

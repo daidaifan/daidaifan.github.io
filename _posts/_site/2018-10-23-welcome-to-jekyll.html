@@ -1,0 +1,21 @@
+<p>Description</p>
+
+<p>Implementation:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">minEatingSpeed</span><span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="n">piles</span><span class="p">,</span> <span class="no">H</span><span class="p">):</span>
+        <span class="n">left</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">max</span><span class="p">(</span><span class="n">piles</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">left</span> <span class="o">&lt;</span> <span class="ss">right:
+            </span><span class="n">mid</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">(</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">/</span><span class="sr">/ 2
+            hours = 0
+            for pile in piles:
+                hours += (pile /</span><span class="o">/</span> <span class="n">mid</span><span class="p">)</span> <span class="o">+</span> <span class="n">int</span><span class="p">(</span><span class="n">pile</span> <span class="o">%</span> <span class="n">mid</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">mid</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">hours</span><span class="p">,</span> <span class="no">H</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">hours</span> <span class="o">&gt;</span> <span class="no">H</span><span class="p">:</span>
+                <span class="n">left</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="ss">else:
+                </span><span class="n">right</span> <span class="o">=</span> <span class="n">mid</span>
+        <span class="k">return</span> <span class="n">left</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
